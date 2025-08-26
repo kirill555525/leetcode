@@ -15,10 +15,8 @@ func trap(height []int) int {
 		}
 	}
 
-	for i, h := range height {
-		if i == j {
-			break
-		}
+	for i := 0; i != j; i++ {
+		h := height[i]
 
 		mHeight = max(mHeight, h)
 
